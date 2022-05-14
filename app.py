@@ -28,8 +28,8 @@ def calculate():
         elif operator=="Division":
             calList.append("/")
             result=calFunctions.divideTwoNum(num1,num2)
-        outputResult=str(calList[0])+str(calList[2])+str(calList[1])+" = "+str(result)
-    return render_template("index.html", message=outputResult)
+        result=str(calList[0])+" "+str(calList[2])+ " "+ str(calList[1])+" = "+str(result)
+    return render_template("index.html", message=result)
    
 if __name__=="__main__":
     app.secret_key="ItIsASecret&$$$$@"

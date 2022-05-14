@@ -1,17 +1,22 @@
 <html>
+    
+
     <head>
         <title>ACIT2911 Example</title>
     </head>
     <body align=center>
         <div class="row" > 
-            <div style="width:44%"></div>
-            <div style="width: 24%"><legend><h1>ACIT 2911 CICD</h1></legend></div>
-            <div style="width:44%"></div>
-        </div>
-        <form style="checkbox-inline" action="/" method="POST">
+            
+            <div style="margin: auto; width: 24%"><legend><h1>ACIT 2911 CICD</h1></legend></div>
+           
+     
+        <form style="margin: auto; width:24%;checkbox-inline" action="/" method="POST">
           
           <label for="num1">Number1:</label>
-          <input type="text" name="num1"><br>
+	  
+          <input type="text" name="num1"><br><br>
+		
+
           <label for="Operation">Operation:</label>
           
               <select name="Operator">
@@ -19,14 +24,19 @@
                   <option>Subtraction</option>
                   <option>Multiplication</option>
                   <option>Division</option>
-              </select> <br>
-         
+              </select> <br><br>
+
+
+
           <label for="num2">Number2:</label>
-          <input type="text" name="num2"><br>
-          <button type="submit", value="submit">Calculate</button>
-        </form>
-        {%if message%}
-        <p>The answer is {{message}}</p>
-        {%endif%}
-    </body>
+          <input type="text" name="num2"><br><br>
+
+
+          <button type="submit", value="submit">Calculate</button><br>
+
+        </form style="margin: auto; width:220px">
+        {%if message%}<br>
+        <p style="margin:auto; width: 24%">The answer is {{message}}</p>
+        {%endif%}    
+</body>
 </html>
