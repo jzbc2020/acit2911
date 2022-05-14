@@ -2,14 +2,13 @@ language: python
 python:
 - "3.9"
 
-install: "pip install -r requirements.txt"
+install: 
+ -pip install -r requirements.txt
 
 script:
 - pytest appTest.py -v --cov
 
 notifications:
  email:
-  recipients: 
-    -lzhang200@bcit.ca
-    on_success: always
-    on_failure: always
+  -on_success: always
+  -on_failure: always
