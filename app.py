@@ -1,6 +1,7 @@
 
 from flask import Flask, render_template, request
 import calFunctions
+import os
 
 app=Flask(__name__)
 @app.route("/",methods=['POST','GET'])
@@ -34,4 +35,6 @@ def calculate():
 if __name__=="__main__":
     app.secret_key="ItIsASecret&$$$$@"
     app.debug=True
-    app.run()
+    # Heroku will set the PORT environment variable for web traffic
+    port = os.environ.get("PORT", 5000)
+    app.run(debug=False, host="0.0.0.0",port=port)# set debug=False before deployment
