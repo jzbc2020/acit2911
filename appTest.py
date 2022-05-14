@@ -11,4 +11,4 @@ class TestCalculatorFunctions:
         assert 6==calFunctions.multiplyTwoNum(2,3)
     def test_divideTwoNum(self):
         assert 2==calFunctions.divideTwoNum(14,7)
-        assert 4.68==calFunctions.divideTwoNum(14,3)
+        assert 4.67==calFunctions.divideTwoNum(14,3)
