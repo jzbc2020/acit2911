@@ -9,6 +9,7 @@ script:
 
 notifications:
  email:
- recipients: "lzhang200@bcit.ca"
-  -on_success: always
-  -on_failure: always
+  recipients: 
+   -lzhang200@bcit.ca
+  on_success: always # default: change
+  on_failure: always
